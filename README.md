@@ -1,100 +1,93 @@
-# :wave: The Basics of GitHub 
+# GitHub 基本指南
 
-## 🤓 Course overview and learning outcomes 
+## 本堂課目標
 
-The goal of this course is to give you a brief introduction to GitHub. We’ll also provide you with materials for further learning and a few ideas to get you started on our platform. 🚀
+本課程目標是提供 GitHub 的簡要介紹，並提供進階學習資源與實作建議，協助學生在平台上開始運作。
+本文翻譯自Github Classroom官方範例repo
 
-## :octocat: Git and GitHub
+## Git and GitHub
 
-Git is a **distributed Version Control System (VCS)**, which means it is a useful tool for easily tracking changes to your code, collaborating, and sharing. With Git you can track the changes you make to your project so you always have a record of what you’ve worked on and can easily revert back to an older version if need be. It also makes working with others easier—groups of people can work together on the same project and merge their changes into one final source!
+Git 是一款分散式版本控制系統（VCS）。其核心功能在於精確追蹤程式碼變更、促進團隊協作與資源共享。
+透過 Git，我們可以記錄專案的每一次更動，確保擁有完整的歷史版本資訊，並在必要時輕鬆回溯至舊版本。
+它簡化了多人協作流程，讓團隊成員能在同一專案上並行開發，最後再將各自的變更合併（Merge）為最終版本。
 
-GitHub is a way to use the same power of Git all online with an easy-to-use interface. It’s used across the software world and beyond to collaborate and maintain the history of projects.
+GitHub 則是基於 Git 核心技術的線上平台，提供了易於操作的圖形化介面。它被廣泛應用於軟體界及其他領域，用於協作開發與維護專案歷史。
 
-GitHub is home to some of the most advanced technologies in the world. Whether you're visualizing data or building a new game, there's a whole community and set of tools on GitHub that can get you to the next step. This course starts with the basics of GitHub, but we'll dig into the rest later.
+GitHub 是全球先進技術的匯集地。無論是數據視覺化或是開發新遊戲，其社群與工具鏈都能提供必要的支援。
+本課程只會用到基礎功能。
 
-## :octocat: Understanding the GitHub flow 
+## 理解 GitHub 工作流
 
-The GitHub flow is a lightweight workflow that allows you to experiment and collaborate on your projects easily, without the risk of losing your previous work.
+GitHub flow 是一種輕量化的工作流程，讓我們在不影響既有成果的前提下，安全地進行實驗與協作。
 
-### Repositories
+### 儲存庫 Repositories
 
-A repository is where your project work happens--think of it as your project folder. It contains all of your project’s files and revision history.  You can work within a repository alone or invite others to collaborate with you on those files.
+儲存庫是專案運行的核心單位，可視為專案的資料夾。它包含了所有專案檔案及其完整的修訂歷史紀錄。可以獨立運作，也可以邀請他人共同開發。
 
-### Cloning 
+### 複製 Cloning 
 
-When a repository is created with GitHub, it’s stored remotely in the ☁️. You can clone a repository to create a local copy on your computer and then use Git to sync the two. This makes it easier to fix issues, add or remove files, and push larger commits. You can also use the editing tool of your choice as opposed to the GitHub UI. Cloning a repository also pulls down all the repository data that GitHub has at that point in time, including all versions of every file and folder for the project! This can be helpful if you experiment with your project and then realize you liked a previous version more. 
+在 GitHub 上建立的儲存庫儲存於雲端遠端。透過 Clone 操作，工程師可以在本地電腦建立副本，並使用 Git 同步兩者。這有助於修復問題、增刪檔案以及處理大型提交（Commits），且能使用偏好的編輯器而非僅限於網頁介面。
+Clone 的關鍵在於它會下載當前所有的歷史數據，包括所有檔案與資料夾的歷史版本，這對於版本回溯與實驗極具價值。 
 To learn more about cloning, read ["Cloning a Repository"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
-### Committing and pushing
-**Committing** and **pushing** are how you can add the changes you made on your local machine to the remote repository in GitHub. That way your instructor and/or teammates can see your latest work when you’re ready to share it. You can make a commit when you have made changes to your project that you want to “checkpoint.” You can also add a helpful **commit message** to remind yourself or your teammates what work you did (e.g. “Added a README with information about our project”).
+### 提交與推送 Committing and pushing
 
-Once you have a commit or multiple commits that you’re ready to add to your repository, you can use the push command to add those changes to your remote repository. Committing and pushing may feel new at first, but we promise you’ll get used to it 🙂
+- Commit（提交）：當專案達到特定階段時，建立一個「檢查點」（Checkpoint）。建議附上具描述性的 Commit Message（例如：「新增包含專案資訊的 README」），以利自己與團隊成員理解變更內容。
 
-## 💻 GitHub terms to know 
+- Push（推送）：將本地端的提交同步至 GitHub 遠端儲存庫，使指導者或團隊成員能看到最新的工作進度。
 
-### Repositories 
-We mentioned repositories already, they are where your project work happens, but let’s talk a bit more about the details of them! As you work more on GitHub you will have many repositories which may feel confusing at first. Fortunately, your ["GitHub dashboard"](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/about-your-personal-dashboard) helps to easily navigate to your repositories and see useful information about them. Make sure you’re logged in to see it!
+## 💻 GitHub 技術術語
 
-Repositories also contain **README**s. You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it. We are using this README to communicate how to learn Git and GitHub with you. 😄 
+### 儲存庫 
+
+隨著專案增加，管理儲存庫可能變得複雜。可以使用 ["GitHub dashboard"](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/about-your-personal-dashboard) 來導覽與查看專案資訊。
+
+README：每個儲存庫都應包含 README 檔案，用以說明專案用途、功能及使用方法。這是與他人溝通的首要文件。
 To learn more about repositories read ["Creating, Cloning, and Archiving Repositories](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repositories) and ["About README's"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes). 
 
-### Branches
-You can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository—main. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository.
+### 分支 Branches
+分支用於隔離開發中的工作，避免影響最終成品。它允許我們在受控的環境中開發新功能、修復 Bug 或進行實驗。通常會從預設分支（main）建立新分支，待代碼經過審查（Code Review）或確認無誤後，再合併回主分支。
 To learn more about branching, read ["About Branches"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches).
 
-### Forks
-A fork is another way to copy a repository, but is usually used when you want to contribute to someone else’s project. Forking a repository allows you to freely experiment with changes without affecting the original project and is very popular when contributing to open source software projects!
+### 分叉 Forks
+Fork 是另一種複製儲存庫的方式，主要用於貢獻他人的專案。它讓我們在不影響原始專案的情況下自由修改，是開源軟體協作的標準做法。
 To learn more about forking, read ["Fork a repo"](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
 
-### Pull requests
-When working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch.
+### 拉取請求 Pull requests, PR
+當分支上的變更準備就緒，透過 PR 通知他人進行審查與討論。可以指派特定成員為審查者。獲得認可後，變更即可合併至 main 分支。
 To learn more about pull requests, read ["About Pull Requests"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). 
 
 
-### Issues
-Issues are a way to track enhancements, tasks, or bugs for your work on GitHub. Issues are a great way to keep track of all the tasks you want to work on for your project and let others know what you plan to work on. You can also use issues to tell a favorite open source project about a bug you found or a feature you think would be great to add!
-
-For larger projects, you can keep track of many issues on a project board. GitHub Projects help you organize and prioritize your work and you can read more about them [in this "About Project boards document](https://docs.github.com/en/github/managing-your-work-on-github/about-project-boards). You likely won’t need a project board for your assignments, but once you move on to even bigger projects, they’re a great way to organize your team’s work!
-You can also link together pull requests and issues to show that a fix is in progress and to automatically close the issue when someone merges the pull request.
+### 議題 Issues
+用於追蹤功能增強、工作任務或程式缺陷（Bug）。它是管理專案待辦清單與溝通開發計畫的工具。
+Project Boards：大型專案可使用專案看板來排定優先順序。
+自動化連結：可以將 PR 連結至 Issue，當 PR 合併時自動關閉該議題。
 To learn more about issues and linking them to your pull requests, read ["About Issues"](https://docs.github.com/en/github/managing-your-work-on-github/about-issues). 
 
-### Your user profile
+### 個人檔案 (User Profile)
 
-Your profile page tells people the story of your work through the repositories you're interested in, the contributions you've made, and the conversations you've had. You can also give the world a unique view into who you are with your profile README. You can use your profile to let future employers know all about you! 
+個人的 Profile 頁面透過儲存庫、貢獻紀錄與討論內容，向外界展示專業經歷。Profile README 則是一個獨特的視窗，可用於向潛在雇主展示技術特點。
 To learn more about your user profile and adding and updating your profile README, read ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme). 
 
-### Using markdown on GitHub 
+### Markdown 的應用
 
-You might have noticed already, but you can add some fun styling to your issues, pull requests, and files. ["Markdown"](https://guides.github.com/features/mastering-markdown/) is an easy way to style your issues, pull requests, and files with some simple syntax. This can be helpful to organize your information and make it easier for others to read. You can also drop in gifs and images to help convey your point!
+GitHub 廣泛使用 Markdown 語法來編排 Issues、PR 和檔案內容。這種輕量標記語言有助於資訊結構化，提升可讀性，並支援插入圖片與 GIF。
 To learn more about using GitHub’s flavor of markdown, read ["Basic Writing and Formatting Syntax"](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax). 
 
-### Engaging with the GitHub community
+### 參與 GitHub 社群
 
-The GitHub community is vast. There are many types of people who use GitHub in their day to day—students like you, professional developers, hobbyists working on open source projects, and explorers who are just jumping into the world of software development on their own. There are many ways you can interact with the larger GitHub community, but here are three places where you can start. 
+GitHub 社群由學生、專業開發者、開源愛好者等多元背景組成。互動方式包括：
 
-#### Starring repositories 
+Star (標星)：收藏感興趣的儲存庫，這也是 GitHub Explore 推薦演算法的重要參數。
 
-If you find a repository interesting or you want to keep track of it, star it! When you star a repository it’s also used as a signal to surface better recommendations on github.com/explore. If you’d like to get back to your starred repositories you can do so via your user profile. 
-To learn  more about starring repositories, read ["Saving Repositories with Stars"](https://docs.github.com/en/github/getting-started-with-github/saving-repositories-with-stars). 
+Follow (關注)：追蹤特定開發者的動態，其公開活動會顯示在 Dashboard。
 
-#### Following users 
+Explore (探索)：github.com/explore 是發現新專案與開發者的門戶。
 
-You can follow people on GitHub to receive notifications about their activity and discover projects in their communities. When you follow a user, their public GitHub activity will show up on your dashboard so you can see all the cool things they are working on. 
-To learn more about following users, read ["Following People"](https://docs.github.com/en/github/getting-started-with-github/following-people).
+## 實作環節
 
-#### Browsing GitHub Explore 
+* 建立一個 Pull Request 並通知我已完成課程。
 
-GitHub Explore is a great place to do just that … explore :smile: You can find new projects, events, and developers to interact with.
-
-You can check out the GitHub Explore website [at github.com/explore](https://github.com/explore). The more you interact with GitHub the more tailored your Explore view will be. 
-
-## 📝 Optional next steps 
-
-* Open a pull request and let your teacher know that you’ve finished this course.  
-* Create a new markdown file in this repository. Let them know what you learned and what you are still confused about! Experiment with different styles!
-* Create your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What's your favorite hobby? Learn more about creating your profile README in the document, ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme).
-* Go to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them. 
-* [Let us know what you liked or didn’t like about the content of this course](https://support.github.com/contact/education). What would you like to see more of? What would be interesting or helpful to your learning journey? 
 
 ## 📚  Resources 
 * [A short video explaining what GitHub is](https://www.youtube.com/watch?v=w3jLJU7DT5E&feature=youtu.be) 
